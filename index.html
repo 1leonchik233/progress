@@ -50,8 +50,8 @@ ul.sp{padding-left:18px;margin:8px 0 0;color:var(--mute);font-size:15px}
 iframe{width:100%;height:300px;border:0;border-radius:14px}
 .gal{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));margin-top:8px}
 .gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;display:block}
-.tabs{display:flex;gap:8px;margin-bottom:16px}
-.tabs button{flex:1;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:600;cursor:pointer}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tabs button{flex:1 1 auto;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:600;cursor:pointer}
 .tabs button.on{background:var(--accent);border-color:var(--accent);color:#fff}
 .calc{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:start}
 .calc label{display:block;font-size:14px;color:var(--mute);margin:12px 0 4px}
@@ -88,7 +88,7 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--mute);font-si
 <div class="grid">
 <div class="card"><div class="ph"><img src="img/p1-1.jpg" alt="Тумба под раковину на заказ" loading="lazy"></div><h3>Тумбы под раковину</h3><p>ЛДСП или МДФ в плёнке, столешница из искусственного камня с интегрированной раковиной, выдвижные ящики, фурнитура Boyard.</p></div>
 <div class="card"><div class="ph"><img src="img/p3-1.jpg" alt="Технический шкаф над инсталляцией" loading="lazy"></div><h3>Технические шкафы</h3><p>Прячут инсталляцию, фильтры и коллекторы, но дают доступ к ним. Каркас из ЛДСП, двери из МДФ в плёнке.</p></div>
-<div class="card"><div class="ph"><img src="img/g/dush-1607.jpg" alt="Душевая" loading="lazy"></div><h3>Душевые и зеркала</h3><p>Душевые ограждения и зеркала под размер вашей ванной.</p></div>
+<div class="card"><div class="ph"><img src="img/g/dush-1607-1.jpg" alt="Душевая" loading="lazy"></div><h3>Душевые и зеркала</h3><p>Душевые ограждения и зеркала под размер вашей ванной.</p></div>
 <div class="card"><h3>Кухни и корпусная мебель</h3><p>Кухни, шкафы, столешницы — по индивидуальному проекту в 3D.</p></div>
 </div>
 </div></section>
@@ -143,42 +143,58 @@ footer{padding:28px 0;border-top:1px solid var(--line);color:var(--mute);font-si
 <section id="works"><div class="wrap">
 <h2>Наши работы</h2>
 <p class="sub">Реальные работы из нашего Telegram-канала.</p>
-<div class="tabs" id="gf"><button type="button" class="on" data-f="all">Все</button><button type="button" data-f="tumba">Тумбы</button><button type="button" data-f="shkaf">Шкафы</button><button type="button" data-f="dush">Душевые</button><button type="button" data-f="top">Столешницы</button></div>
+<div class="tabs" id="gf"><button type="button" class="on" data-f="all">Все</button><button type="button" data-f="tumba">Тумбы</button><button type="button" data-f="install">Шкаф над инсталляцией</button><button type="button" data-f="shkaf">Шкафы</button><button type="button" data-f="dush">Душевые</button><button type="button" data-f="top">Столешницы</button></div>
 <div class="gal" id="gal">
-<img src="img/g/dush-1346.jpg" data-c="dush" alt="Душевые" loading="lazy">
-<img src="img/g/dush-1474.jpg" data-c="dush" alt="Душевые" loading="lazy">
-<img src="img/g/dush-1503.jpg" data-c="dush" alt="Душевые" loading="lazy">
-<img src="img/g/dush-1513.jpg" data-c="dush" alt="Душевые" loading="lazy">
-<img src="img/g/dush-1603.jpg" data-c="dush" alt="Душевые" loading="lazy">
-<img src="img/g/dush-1607.jpg" data-c="dush" alt="Душевые" loading="lazy">
-<img src="img/g/shkaf-1443.jpg" data-c="shkaf" alt="Шкафы" loading="lazy">
-<img src="img/g/shkaf-1477.jpg" data-c="shkaf" alt="Шкафы" loading="lazy">
-<img src="img/g/shkaf-1483.jpg" data-c="shkaf" alt="Шкафы" loading="lazy">
-<img src="img/g/shkaf-1488.jpg" data-c="shkaf" alt="Шкафы" loading="lazy">
-<img src="img/g/shkaf-1516.jpg" data-c="shkaf" alt="Шкафы" loading="lazy">
-<img src="img/g/shkaf-1615.jpg" data-c="shkaf" alt="Шкафы" loading="lazy">
-<img src="img/g/shkaf-1638.jpg" data-c="shkaf" alt="Шкафы" loading="lazy">
-<img src="img/g/top-1449.jpg" data-c="top" alt="Столешницы" loading="lazy">
-<img src="img/g/top-1457.jpg" data-c="top" alt="Столешницы" loading="lazy">
-<img src="img/g/top-1497.jpg" data-c="top" alt="Столешницы" loading="lazy">
-<img src="img/g/tumba-1461.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1465.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1470.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1519.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1533.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1548.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1559.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1564.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1570.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1577.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1583.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1592.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1596.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1611.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1620.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1626.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1630.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
-<img src="img/g/tumba-1644.jpg" data-c="tumba" alt="Тумбы" loading="lazy">
+<img src="img/g/tumba-1519-1.jpg" data-c="tumba" alt="Тумба на заказ" loading="lazy">
+<img src="img/g/install-1488-1.jpg" data-c="install" alt="Шкаф над инсталляцией" loading="lazy">
+<img src="img/g/shkaf-1443-1.jpg" data-c="shkaf" alt="Шкаф" loading="lazy">
+<img src="img/g/dush-1346-1.jpg" data-c="dush" alt="Душевая" loading="lazy">
+<img src="img/g/top-1036-1.jpg" data-c="top" alt="Столешница" loading="lazy">
+<img src="img/g/tumba-1533-1.jpg" data-c="tumba" alt="Тумба на заказ" loading="lazy">
+<img src="img/g/install-1488-2.jpg" data-c="install" alt="Шкаф над инсталляцией" loading="lazy">
+<img src="img/g/shkaf-1443-2.jpg" data-c="shkaf" alt="Шкаф" loading="lazy">
+<img src="img/g/dush-1346-2.jpg" data-c="dush" alt="Душевая" loading="lazy">
+<img src="img/g/top-1036-2.jpg" data-c="top" alt="Столешница" loading="lazy">
+<img src="img/g/tumba-1548-1.jpg" data-c="tumba" alt="Тумба на заказ" loading="lazy">
+<img src="img/g/install-1488-3.jpg" data-c="install" alt="Шкаф над инсталляцией" loading="lazy">
+<img src="img/g/shkaf-1477-1.jpg" data-c="shkaf" alt="Шкаф" loading="lazy">
+<img src="img/g/dush-1474-1.jpg" data-c="dush" alt="Душевая" loading="lazy">
+<img src="img/g/top-1036-3.jpg" data-c="top" alt="Столешница" loading="lazy">
+<img src="img/g/tumba-1564-1.jpg" data-c="tumba" alt="Тумба на заказ" loading="lazy">
+<img src="img/g/install-1488-4.jpg" data-c="install" alt="Шкаф над инсталляцией" loading="lazy">
+<img src="img/g/shkaf-1477-2.jpg" data-c="shkaf" alt="Шкаф" loading="lazy">
+<img src="img/g/dush-1474-2.jpg" data-c="dush" alt="Душевая" loading="lazy">
+<img src="img/g/top-1449-1.jpg" data-c="top" alt="Столешница" loading="lazy">
+<img src="img/g/tumba-1570-1.jpg" data-c="tumba" alt="Тумба на заказ" loading="lazy">
+<img src="img/g/install-1516-1.jpg" data-c="install" alt="Шкаф над инсталляцией" loading="lazy">
+<img src="img/g/shkaf-1483-1.jpg" data-c="shkaf" alt="Шкаф" loading="lazy">
+<img src="img/g/dush-1603-1.jpg" data-c="dush" alt="Душевая" loading="lazy">
+<img src="img/g/top-1449-2.jpg" data-c="top" alt="Столешница" loading="lazy">
+<img src="img/g/tumba-1583-1.jpg" data-c="tumba" alt="Тумба на заказ" loading="lazy">
+<img src="img/g/install-1516-2.jpg" data-c="install" alt="Шкаф над инсталляцией" loading="lazy">
+<img src="img/g/shkaf-1483-2.jpg" data-c="shkaf" alt="Шкаф" loading="lazy">
+<img src="img/g/dush-1603-2.jpg" data-c="dush" alt="Душевая" loading="lazy">
+<img src="img/g/top-1449-3.jpg" data-c="top" alt="Столешница" loading="lazy">
+<img src="img/g/tumba-1592-1.jpg" data-c="tumba" alt="Тумба на заказ" loading="lazy">
+<img src="img/g/install-1516-3.jpg" data-c="install" alt="Шкаф над инсталляцией" loading="lazy">
+<img src="img/g/shkaf-1615-1.jpg" data-c="shkaf" alt="Шкаф" loading="lazy">
+<img src="img/g/dush-1603-3.jpg" data-c="dush" alt="Душевая" loading="lazy">
+<img src="img/g/top-1457-1.jpg" data-c="top" alt="Столешница" loading="lazy">
+<img src="img/g/tumba-1596-1.jpg" data-c="tumba" alt="Тумба на заказ" loading="lazy">
+<img src="img/g/install-1630-7.jpg" data-c="install" alt="Шкаф над инсталляцией" loading="lazy">
+<img src="img/g/shkaf-1615-2.jpg" data-c="shkaf" alt="Шкаф" loading="lazy">
+<img src="img/g/dush-1607-1.jpg" data-c="dush" alt="Душевая" loading="lazy">
+<img src="img/g/top-1457-2.jpg" data-c="top" alt="Столешница" loading="lazy">
+<img src="img/g/tumba-1611-1.jpg" data-c="tumba" alt="Тумба на заказ" loading="lazy">
+<img src="img/g/install-1659-1.jpg" data-c="install" alt="Шкаф над инсталляцией" loading="lazy">
+<img src="img/g/shkaf-1638-1.jpg" data-c="shkaf" alt="Шкаф" loading="lazy">
+<img src="img/g/dush-1607-2.jpg" data-c="dush" alt="Душевая" loading="lazy">
+<img src="img/g/top-1497-1.jpg" data-c="top" alt="Столешница" loading="lazy">
+<img src="img/g/tumba-1626-1.jpg" data-c="tumba" alt="Тумба на заказ" loading="lazy">
+<img src="img/g/install-1659-2.jpg" data-c="install" alt="Шкаф над инсталляцией" loading="lazy">
+<img src="img/g/shkaf-1638-2.jpg" data-c="shkaf" alt="Шкаф" loading="lazy">
+<img src="img/g/dush-1607-3.jpg" data-c="dush" alt="Душевая" loading="lazy">
+<img src="img/g/top-982-1.jpg" data-c="top" alt="Столешница" loading="lazy">
 </div>
 </div></section>
 
