@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ПРОГРЕСС — мебель на заказ в Москве</title>
+<meta name="description" content="Мебель на заказ: тумбы под раковину, технические шкафы, душевые, зеркала, кухни. Шоурум МЦ ROOMER, Ленинская Слобода 26, павильон A115.">
+<style>
+:root{--bg:#faf8f5;--card:#fff;--ink:#23201c;--mute:#6f685f;--accent:#b5763a;--accent2:#8f5a28;--line:#e8e2d9}
+@media (prefers-color-scheme:dark){:root{--bg:#171512;--card:#211e1a;--ink:#f2ede6;--mute:#a69e92;--accent:#d49458;--accent2:#e6ab70;--line:#33302a}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;letter-spacing:.12em;text-decoration:none}
+.logo span{color:var(--accent)}
+nav a{margin-left:20px;text-decoration:none;color:var(--mute);font-size:15px}
+nav a:hover{color:var(--accent)}
+@media(max-width:640px){nav a:not(.tel){display:none}}
+.hero{padding:72px 0 56px}
+.hero h1{font-size:clamp(32px,6vw,56px);line-height:1.1;margin:0 0 16px;max-width:14em}
+.hero p{font-size:18px;color:var(--mute);max-width:36em;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;border:1px solid var(--accent)}
+.btn:hover{background:var(--accent2)}
+.btn.o{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.o:hover{border-color:var(--accent);color:var(--accent)}
+section{padding:48px 0}
+h2{font-size:clamp(24px,4vw,34px);margin:0 0 8px}
+.sub{color:var(--mute);margin:0 0 28px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--mute);font-size:15px}
+.ph{aspect-ratio:4/3;border-radius:10px;margin-bottom:14px;background:linear-gradient(135deg,var(--line),var(--bg));display:grid;place-items:center;color:var(--mute);font-size:13px;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.price{font-size:24px;font-weight:800;color:var(--accent);margin:8px 0}
+ul.sp{padding-left:18px;margin:8px 0 0;color:var(--mute);font-size:15px}
+.steps{counter-reset:s;display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+.steps div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;counter-increment:s}
+.steps div::before{content:counter(s);display:block;font-size:30px;font-weight:800;color:var(--accent);margin-bottom:4px}
+.steps b{display:block}
+.steps span{color:var(--mute);font-size:15px}
+.contacts{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.contacts p{margin:0 0 10px}
+.big{font-size:26px;font-weight:800;text-decoration:none}
+iframe{width:100%;height:300px;border:0;border-radius:14px}
+.gal{display:grid;gap:10px;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));margin-top:8px}
+.gal img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;display:block}
+.tabs{display:flex;gap:8px;margin-bottom:16px}
+.tabs button{flex:1;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:600;cursor:pointer}
+.tabs button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.calc{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));align-items:start}
+.calc label{display:block;font-size:14px;color:var(--mute);margin:12px 0 4px}
+.calc input[type=number],.calc select{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.calc .chk{display:flex;align-items:center;gap:10px;color:var(--ink);font-size:15px;margin:10px 0 0}
+.calc .chk input{width:18px;height:18px;accent-color:var(--accent)}
+.res{position:sticky;top:76px}
+.res .price{font-size:30px;margin:6px 0 10px}
+.res small{color:var(--mute);display:block;margin-top:10px;font-size:13px}
+.res pre{white-space:pre-wrap;font:14px/1.5 inherit;color:var(--mute);margin:0 0 14px}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#">ПРОГРЕСС<span>.</span></a>
+<nav><a href="#catalog">Каталог</a><a href="#stock">В наличии</a><a href="#calc">Калькулятор</a><a href="#how">Как заказать</a><a href="#contacts">Контакты</a><a class="tel" href="tel:+79252311773">+7 925 231-17-73</a></nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+<h1>Мебель на заказ — точно по вашим размерам</h1>
+<p>Тумбы под раковину, технические шкафы, душевые, зеркала, кухни и корпусная мебель. Делаем с учётом особенностей помещения и расположения коммуникаций.</p>
+<div class="btns">
+<a class="btn" href="https://t.me/PROGRESS2388">Рассчитать в Telegram</a>
+<a class="btn o" href="https://maxln.ru/q3RQ8B">Написать в Max</a>
+<a class="btn o" href="tel:+79252311773">Позвонить</a>
+</div>
+</div></section>
+
+<section id="catalog"><div class="wrap">
+<h2>Что мы делаем</h2>
+<p class="sub">Всё изготавливается под ваш проект. Стоимость считаем бесплатно.</p>
+<div class="grid">
+<div class="card"><div class="ph"><img src="img/p1-1.jpg" alt="Тумба под раковину на заказ" loading="lazy"></div><h3>Тумбы под раковину</h3><p>ЛДСП или МДФ в плёнке, столешница из искусственного камня с интегрированной раковиной, выдвижные ящики, фурнитура Boyard.</p></div>
+<div class="card"><div class="ph"><img src="img/p3-1.jpg" alt="Технический шкаф над инсталляцией" loading="lazy"></div><h3>Технические шкафы</h3><p>Прячут инсталляцию, фильтры и коллекторы, но дают доступ к ним. Каркас из ЛДСП, двери из МДФ в плёнке.</p></div>
+<div class="card"><h3>Душевые и зеркала</h3><p>Душевые ограждения и зеркала под размер вашей ванной.</p></div>
+<div class="card"><h3>Кухни и корпусная мебель</h3><p>Кухни, шкафы, столешницы — по индивидуальному проекту в 3D.</p></div>
+</div>
+</div></section>
+
+<section id="stock"><div class="wrap">
+<h2>Тумбы в наличии</h2>
+<p class="sub">Без ожидания изготовления — можно посмотреть в шоуруме.</p>
+<div class="grid">
+<div class="card"><div class="ph"><img src="img/p4-1.jpg" alt="Тумба с раковиной 680×560×500" loading="lazy"></div><h3>Тумба с раковиной 680 × 560 × 500</h3><div class="price">35 000 ₽</div>
+<ul class="sp"><li>МДФ в плёнке</li><li>Столешница из искусственного камня</li><li>Керамическая раковина</li><li>2 ящика, фурнитура Boyard</li></ul></div>
+<div class="card"><div class="ph"><img src="img/p5-1.jpg" alt="Тумба с раковиной 600×470×450" loading="lazy"></div><h3>Тумба с раковиной 600 × 470 × 450</h3><div class="price">40 000 ₽</div>
+<ul class="sp"><li>МДФ с ПВХ-плёнкой</li><li>Керамическая раковина</li><li>2 ящика, фурнитура Boyard</li></ul></div>
+</div>
+</div></section>
+
+<section id="calc"><div class="wrap">
+<h2>Калькулятор стоимости</h2>
+<p class="sub">Примерная цена за минуту. Точную назовём после замеров и проекта.</p>
+<div class="tabs"><button id="tb-t" class="on" type="button">Тумба</button><button id="tb-m" type="button">Зеркало</button></div>
+<div class="calc">
+<div class="card" id="f-t">
+<label for="t-w">Ширина, мм (400–1800)</label><input id="t-w" type="number" min="400" max="1800" step="10" value="800">
+<label for="t-mat">Материал фасадов</label><select id="t-mat"><option value="1">МДФ в плёнке / ЛДСП</option><option value="1.3">Эмаль</option></select>
+<label for="t-box">Выдвижных ящиков</label><select id="t-box"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select>
+<label for="t-top">Столешница и раковина</label><select id="t-top"><option value="0">Без столешницы</option><option value="int">Белый камень с интегрированной раковиной</option><option value="60000">Камень + подклейка вашей раковины (раковина отдельно)</option></select>
+<label class="chk"><input type="checkbox" id="t-fr"> Фрезерованные фасады</label>
+<label class="chk"><input type="checkbox" id="t-bk"> Задняя стенка</label>
+<label class="chk"><input type="checkbox" id="t-lt"> Подсветка врезная</label>
+<label class="chk"><input type="checkbox" id="t-ht"> Ящики Hettich вместо Boyard</label>
+<label class="chk"><input type="checkbox" id="t-nc"> Оплата безналом (+10%)</label>
+</div>
+<div class="card" id="f-m" hidden>
+<label for="m-s">Форма</label><select id="m-s"><option value="r">Прямоугольное</option><option value="c">Круглое</option></select>
+<label for="m-w" id="m-wl">Ширина, мм</label><input id="m-w" type="number" min="300" max="2500" step="10" value="800">
+<label for="m-h" id="m-hl">Высота, мм</label><input id="m-h" type="number" min="300" max="2500" step="10" value="1000">
+<label for="m-l">Подсветка</label><select id="m-l"><option value="none">Без подсветки</option><option value="float" selected>Парящая</option><option value="front">Фронтальная</option><option value="both">Парящая + фронтальная</option></select>
+<label class="chk"><input type="checkbox" id="m-ht"> Подогрев от запотевания</label>
+<label class="chk"><input type="checkbox" id="m-md"> Три режима света</label>
+<label class="chk"><input type="checkbox" id="m-ts"> Осветлённое стекло</label>
+<label class="chk"><input type="checkbox" id="m-nc"> Оплата безналом</label>
+</div>
+<div class="card res">
+<b>Ориентировочная стоимость</b>
+<div class="price" id="r-p">—</div>
+<pre id="r-t"></pre>
+<a class="btn" id="r-b" href="https://t.me/PROGRESS2388">Уточнить в Telegram</a>
+<small>Скопируйте расчёт и отправьте нам — сделаем точный просчёт. Цена без доставки и монтажа, расчёт справочный и не является офертой.</small>
+</div>
+</div>
+</div></section>
+
+<section id="works"><div class="wrap">
+<h2>Наши работы</h2>
+<p class="sub">Фото из нашего канала.</p>
+<div class="gal">
+<img src="img/p1-2.jpg" alt="Тумба на заказ" loading="lazy"><img src="img/p2-2.jpg" alt="Тумба с щелевой раковиной" loading="lazy"><img src="img/p2-3.jpg" alt="Тумба на заказ" loading="lazy"><img src="img/p3-1.jpg" alt="Технический шкаф" loading="lazy"><img src="img/p4-2.jpg" alt="Тумба в наличии" loading="lazy"><img src="img/p5-2.jpg" alt="Тумба в наличии" loading="lazy">
+</div>
+</div></section>
+
+<section id="how"><div class="wrap">
+<h2>Как заказать</h2>
+<p class="sub">Четыре шага от обращения до установки.</p>
+<div class="steps">
+<div><b>Заявка</b><span>Напишите в Telegram или Max, либо позвоните.</span></div>
+<div><b>Замеры и проект</b><span>Обсуждаем размеры, материалы, рисуем 3D-эскиз.</span></div>
+<div><b>Договор</b><span>Фиксируем цену, предоплату и срок.</span></div>
+<div><b>Изготовление</b><span>Делаем и сдаём мебель в срок.</span></div>
+</div>
+</div></section>
+
+<section id="contacts"><div class="wrap">
+<h2>Контакты</h2>
+<p class="sub">Шоурум в мебельном центре ROOMER. Выходной — понедельник.</p>
+<div class="contacts">
+<div>
+<p><a class="big" href="tel:+79252311773">+7 925 231-17-73</a></p>
+<p>📍 МЦ ROOMER, Ленинская Слобода 26, павильон A115</p>
+<div class="btns">
+<a class="btn" href="https://t.me/PROGRESS2388">Telegram</a>
+<a class="btn o" href="https://maxln.ru/q3RQ8B">Max</a>
+</div>
+</div>
+<iframe loading="lazy" title="Карта" src="https://yandex.ru/map-widget/v1/?text=Москва%2C%20Ленинская%20Слобода%2026&z=15"></iframe>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© ООО «Прогресс». Мебель на заказ. Не является публичной офертой.</div></footer>
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var fmt=function(n){return n.toLocaleString('ru-RU')+' ₽'};
+var rnd=function(n,s){return Math.round(n/s)*s};
+var PTS=[[400,33000],[600,36000],[800,43000],[1000,49000],[1200,55000],[1500,62000]];
+function base(w){
+  if(w<=PTS[0][0])return PTS[0][1];
+  for(var i=1;i<PTS.length;i++){
+    if(w<=PTS[i][0]){var a=PTS[i-1],b=PTS[i];return a[1]+(b[1]-a[1])*(w-a[0])/(b[0]-a[0]);}
+  }
+  return 62000+(w-1500)*23;
+}
+function out(price,lines){
+  var lo=rnd(price*0.9,500),hi=rnd(price*1.1,500);
+  $('r-p').textContent='от '+fmt(lo)+' до '+fmt(hi);
+  var txt='Расчёт с сайта:\n'+lines.join('\n')+'\nОриентир: '+fmt(lo)+' – '+fmt(hi);
+  $('r-t').textContent=txt;
+}
+function tumba(){
+  var w=Math.min(1800,Math.max(400,+$('t-w').value||800));
+  var p=base(w)*(+$('t-mat').value);
+  var box=+$('t-box').value;
+  p+=Math.max(0,box-2)*4000;
+  var top=$('t-top').value;
+  p+=top==='int'?(w<=1000?65000:68000):+top;
+  if($('t-fr').checked)p+=5000;
+  if($('t-bk').checked)p+=2000;
+  if($('t-lt').checked)p+=5000;
+  if($('t-ht').checked)p+=2500;
+  if($('t-nc').checked)p*=1.1;
+  var L=['Тумба '+w+' мм, '+($('t-mat').value==='1'?'плёнка/ЛДСП':'эмаль')+', ящиков: '+box,'Столешница: '+$('t-top').selectedOptions[0].text];
+  var o=[];['t-fr:фрезеровка','t-bk:задняя стенка','t-lt:подсветка','t-ht:Hettich','t-nc:безнал'].forEach(function(x){var k=x.split(':');if($(k[0]).checked)o.push(k[1])});
+  if(o.length)L.push('Опции: '+o.join(', '));
+  out(p,L);
+}
+function mirror(){
+  var circle=$('m-s').value==='c';
+  var w=Math.max(300,+$('m-w').value||800);
+  var h=circle?w:Math.max(300,+$('m-h').value||1000);
+  var s=w*h/1e6,l=$('m-l').value,opt;
+  if(l==='none'){opt=Math.max(3000,5500*s);}
+  else{opt=1000+10500*s;if(l==='both')opt+=1000;if($('m-md').checked)opt+=1000;}
+  if(circle)opt+=1000;
+  if($('m-ht').checked)opt+=2500;
+  if($('m-ts').checked)opt*=1.1;
+  var p=opt*1.7;
+  if($('m-nc').checked)p*=2/1.7;
+  var L=['Зеркало '+(circle?'круглое Ø'+w:w+'×'+h)+' мм','Подсветка: '+$('m-l').selectedOptions[0].text];
+  var o=[];['m-ht:подогрев','m-md:3 режима света','m-ts:осветлённое','m-nc:безнал'].forEach(function(x){var k=x.split(':');if($(k[0]).checked)o.push(k[1])});
+  if(o.length)L.push('Опции: '+o.join(', '));
+  out(p,L);
+}
+var cur='t';
+function upd(){cur==='t'?tumba():mirror()}
+function tab(t){
+  cur=t;
+  $('f-t').hidden=t!=='t';$('f-m').hidden=t!=='m';
+  $('tb-t').className=t==='t'?'on':'';$('tb-m').className=t==='m'?'on':'';
+  upd();
+}
+function circ(){
+  var c=$('m-s').value==='c';
+  $('m-h').hidden=c;$('m-hl').hidden=c;
+  $('m-wl').textContent=c?'Диаметр, мм':'Ширина, мм';
+}
+$('tb-t').onclick=function(){tab('t')};
+$('tb-m').onclick=function(){tab('m')};
+['f-t','f-m'].forEach(function(id){
+  $(id).addEventListener('input',function(){if(id==='f-m')circ();upd()});
+  $(id).addEventListener('change',function(){if(id==='f-m')circ();upd()});
+});
+circ();upd();
+})();
+</script>
+</body>
+</html>
